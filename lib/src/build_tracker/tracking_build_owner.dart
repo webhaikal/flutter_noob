@@ -58,7 +58,7 @@ class TrackingBuildOwner extends BuildOwner {
   }
 
   @override
-  void reassemble(Element root) {
+  void reassemble(Element root, DebugReassembleConfig? reassembleConfig) {
     _isReassembling++;
     try {
       super.reassemble(root);
